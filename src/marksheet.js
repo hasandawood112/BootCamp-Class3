@@ -2,6 +2,8 @@ import React from 'react';
 
 function Marksheet(props) {
 
+    var total, per;
+
     return (
         <div>
             <h1>Marksheet</h1>
@@ -11,8 +13,8 @@ function Marksheet(props) {
             <p>Chem : {props.Chem}</p>
             <p>Physics : {props.Physics}</p>
 
-            var total = {props.Eng} + {props.Urdu} + {props.Math} + {props.Chem} + {props.Physics}
-            var per = ({total}/500)*100;
+            total = {props.Eng} + {props.Urdu} + {props.Math} + {props.Chem} + {props.Physics}
+            per = ({total}/500)*100;
             <p>Percentage = {per}</p>
 
         </div>
